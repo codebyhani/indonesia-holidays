@@ -6,6 +6,8 @@ The dates come from the joint ministerial decree annexes for 2026 and 2027. This
 
 Maintained by Hani. The license is MIT.
 
+Also available for JavaScript and TypeScript on [npm](https://www.npmjs.com/package/indonesia-holidays). Project docs: [repository README](https://github.com/codebyhani/indonesia-holidays#readme).
+
 ## Install
 
 Requires Python 3.10 or newer.

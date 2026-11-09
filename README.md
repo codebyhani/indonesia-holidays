@@ -6,6 +6,8 @@ The dates come from the joint ministerial decree annexes for 2026 and 2027. The 
 
 Maintained by Hani.
 
+Also available for Python on [PyPI](https://pypi.org/project/indonesia-holidays/). Python docs: [`python/README.md`](https://github.com/codebyhani/indonesia-holidays/blob/main/python/README.md).
+
 ## Install
 
 Requires Node.js 20 or newer.
