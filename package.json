@@ -1,6 +1,6 @@
 {
   "name": "indonesia-holidays",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Offline Indonesian national public holidays and collective leave (cuti bersama), with working-day calculations.",
   "type": "module",
   "sideEffects": false,
