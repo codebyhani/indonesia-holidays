@@ -4,15 +4,11 @@ Offline lookup of Indonesian national public holidays and collective leave, plus
 
 The dates come from the joint ministerial decree annexes for 2026 and 2027. The package does not call a website, ship a database, or invent the next year. A year without a transcribed decree is unsupported.
 
-Maintained by Hani. This package is not on the npm registry yet. From a checkout of this repository:
+Maintained by Hani.
 
-```bash
-npm ci
-npm run build
-node --input-type=module -e "import { getHolidays } from './dist/index.js'; console.log(getHolidays(2026).length)"
-```
+## Install
 
-After it is published:
+Requires Node.js 20 or newer.
 
 ```bash
 npm install indonesia-holidays
@@ -117,20 +113,6 @@ The second clause of each decree says 1 Ramadan, Eid al-Fitr, and Eid al-Adha ar
 - If the Ministry of Religious Affairs revises an official crescent-sighting date after the joint decree, this file stays wrong until an official amendment is transcribed.
 - Working-day counts ignore custom company closures except for the `weekends` and `includeCollectiveLeave` switches.
 
-## Development
+## License
 
-Requires Node.js 20 or newer. CI runs the same checks on Node 20 and 22.
-
-```bash
-npm ci
-npm test
-npm run typecheck
-npm run lint
-npm run build
-```
-
-`npm test` runs the suite in UTC and again in `Pacific/Pago_Pago` and `Pacific/Kiritimati`, so a date-only value cannot pass by accident of the machine timezone.
-
-There are no runtime dependencies. Vitest, TypeScript, tsup, and ESLint are devDependencies.
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for dataset updates and [MAINTAINERS.md](MAINTAINERS.md) for releases. The license is MIT.
+MIT. See [CONTRIBUTING.md](CONTRIBUTING.md) for dataset updates and [MAINTAINERS.md](MAINTAINERS.md) for releases.

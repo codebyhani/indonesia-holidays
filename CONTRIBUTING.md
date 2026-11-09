@@ -2,6 +2,22 @@
 
 This library stays offline and only ships holiday dates that can be read from a primary Indonesian government source. Do not infer a future year from a religious calendar, a news summary alone, or the previous year's pattern.
 
+## Local setup
+
+Requires Node.js 20 or newer. CI runs the same checks on Node 20 and 22.
+
+```bash
+npm ci
+npm test
+npm run typecheck
+npm run lint
+npm run build
+```
+
+`npm test` runs the suite in UTC and again in `Pacific/Pago_Pago` and `Pacific/Kiritimati`, so a date-only value cannot pass by accident of the machine timezone.
+
+There are no runtime dependencies. Vitest, TypeScript, tsup, and ESLint are devDependencies.
+
 ## Add a year
 
 1. Find the SKB 3 Menteri (Keputusan Bersama Menteri Agama, Menteri Ketenagakerjaan, dan Menteri PANRB) for that year, including any later amendment.
