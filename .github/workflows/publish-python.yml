@@ -9,9 +9,31 @@ permissions:
   id-token: write
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      publish: ${{ steps.check.outputs.publish }}
+      mode: ${{ steps.check.outputs.mode }}
+    steps:
+      - id: check
+        run: |
+          REF="${GITHUB_REF_NAME}"
+          PUBLISH=false
+          MODE=skip
+          if [[ "$REF" =~ ^python-v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            PUBLISH=true
+            MODE=package
+          elif [[ "$REF" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]] || [[ "$REF" =~ ^release- ]]; then
+            PUBLISH=true
+            MODE=shared
+          fi
+          echo "publish=${PUBLISH}" >> "$GITHUB_OUTPUT"
+          echo "mode=${MODE}" >> "$GITHUB_OUTPUT"
+          echo "tag=${REF} publish=${PUBLISH} mode=${MODE}"
+
   publish:
-    # Independent versioning: Python tags are python-v0.1.0; npm uses v0.1.1
-    if: startsWith(github.ref_name, 'python-v')
+    needs: gate
+    if: needs.gate.outputs.publish == 'true'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -28,11 +50,28 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -e ".[dev]"
           python -m pip install build
-      - name: Verify version
+      - name: Resolve version
+        id: version
+        env:
+          MODE: ${{ needs.gate.outputs.mode }}
         run: |
-          VERSION=$(python -c "import tomllib; print(tomllib.load(open('pyproject.toml', 'rb'))['project']['version'])")
-          test "${GITHUB_REF_NAME}" = "python-v${VERSION}"
+          VERSION="$(python -c "import tomllib; print(tomllib.load(open('pyproject.toml', 'rb'))['project']['version'])")"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          if [ "$MODE" = package ]; then
+            test "${GITHUB_REF_NAME}" = "python-v${VERSION}"
+          fi
+          if [ "$MODE" = shared ]; then
+            if python -c "import json, urllib.request, sys; v=sys.argv[1]; data=json.load(urllib.request.urlopen('https://pypi.org/pypi/indonesia-holidays/json')); raise SystemExit(0 if v in data.get('releases', {}) else 1)" "$VERSION"; then
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              echo "PyPI ${VERSION} already published; skipping"
+            else
+              echo "skip=false" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Verify package
+        if: steps.version.outputs.skip != 'true'
         run: |
           ruff check src tests hatch_build.py scripts
           ruff format --check src tests hatch_build.py scripts
@@ -43,6 +82,7 @@ jobs:
           python -m build
           python scripts/verify_distribution.py
       - name: Publish
+        if: steps.version.outputs.skip != 'true'
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: python/dist/
