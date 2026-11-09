@@ -1,0 +1,212 @@
+{
+  "year": 2026,
+  "source": {
+    "id": "skb-3-menteri-2026",
+    "title": "Keputusan Bersama Menteri Agama, Menteri Ketenagakerjaan, dan Menteri Pendayagunaan Aparatur Negara dan Reformasi Birokrasi tentang Hari Libur Nasional dan Cuti Bersama Tahun 2026",
+    "kind": "skb_3_menteri",
+    "numbers": [
+      {
+        "ministry": "Kementerian Agama",
+        "number": "1497 Tahun 2025"
+      },
+      {
+        "ministry": "Kementerian Ketenagakerjaan",
+        "number": "2 Tahun 2025"
+      },
+      {
+        "ministry": "Kementerian Pendayagunaan Aparatur Negara dan Reformasi Birokrasi",
+        "number": "5 Tahun 2025"
+      }
+    ],
+    "issuedOn": "2025-09-19",
+    "place": "Jakarta",
+    "signatories": [
+      "Nasaruddin Umar, Menteri Agama",
+      "Yassierli, Menteri Ketenagakerjaan",
+      "Rini Widyantini, Menteri Pendayagunaan Aparatur Negara dan Reformasi Birokrasi"
+    ],
+    "urls": [
+      {
+        "label": "JDIH PDF, annex text verified",
+        "url": "https://jdih.kemenkoinfra.go.id/dokumen/file/skb-libur-nasional-dan-cuti-bersama-tahun-2026.pdf"
+      },
+      {
+        "label": "JDIH catalog record, status Berlaku",
+        "url": "https://jdih.kemenkoinfra.go.id/skb-liburnasional-cutibersama-tahun-2026"
+      },
+      {
+        "label": "Sekretariat Negara announcement",
+        "url": "https://www.setneg.go.id/baca/index/inilah_skb_3_menteri_libur_nasional_dan_cuti_bersama_2026"
+      },
+      {
+        "label": "Kementerian Ketenagakerjaan announcement",
+        "url": "https://kemnaker.go.id/news/detail/pemerintah-umumkan-hari-libur-nasional-dan-cuti-bersama-2026-wamenaker-semoga-berjalan-lancar"
+      },
+      {
+        "label": "Kemenko PMK PDF copy",
+        "url": "https://www.kemenkopmk.go.id/sites/default/files/pengumuman/2025-09/SKB%20Libur%20Nasional%20dan%20Cuti%20Bersama%20Tahun%202026.pdf"
+      }
+    ],
+    "amendments": [],
+    "notes": [
+      "Annex transcribed from the JDIH Kemenko Infrastruktur PDF. Scan whitespace was collapsed. The printed words Harl Suci Nyepi and Harl Buruh Internasional were stored as Hari, which is the reading confirmed by the Sekretariat Negara announcement of the same decree.",
+      "Diktum KEDUA states that 1 Ramadan 1447 Hijriah, Idul Fitri 1447 Hijriah, and Idul Adha 1447 Hijriah are established by Keputusan Menteri Agama. This file stores the Idul Fitri and Idul Adha dates printed in the annex. 1 Ramadan is not a national holiday in this decree.",
+      "Diktum KEEMPAT states that cuti bersama reduces annual leave. Diktum KEENAM states that collective leave at private institutions is arranged by each leader. Diktum KETIGA tells vital public services to roster staff on these dates.",
+      "The Kementerian Ketenagakerjaan announcement of the 19 September 2025 signing says Wakil Menteri Ketenagakerjaan Afriansyah Noor signed on behalf of Menteri Ketenagakerjaan Yassierli, together with Menteri Agama Nasaruddin Umar and Menteri PANRB Rini Widyantini. The decree itself is issued in the names of the three ministers.",
+      "The decree cites Keputusan Presiden Nomor 8 Tahun 2024 tentang Hari-Hari Libur among its considerations. The dated annex is the operative list.",
+      "No amending decree was found when this dataset was compiled on 2026-11-09. amendments is empty for that reason."
+    ]
+  },
+  "holidays": [
+    {
+      "date": "2026-01-01",
+      "name": "Tahun Baru 2026 Masehi",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-01-16",
+      "name": "Isra Mikraj Nabi Muhammad S.A.W.",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-02-16",
+      "name": "Tahun Baru Imlek 2577 Kongzili",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-02-17",
+      "name": "Tahun Baru Imlek 2577 Kongzili",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-03-18",
+      "name": "Hari Suci Nyepi (Tahun Baru Saka 1948)",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-03-19",
+      "name": "Hari Suci Nyepi (Tahun Baru Saka 1948)",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-03-20",
+      "name": "Idul Fitri 1447 Hijriah",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-03-21",
+      "name": "Idul Fitri 1447 Hijriah",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-03-22",
+      "name": "Idul Fitri 1447 Hijriah",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-03-23",
+      "name": "Idul Fitri 1447 Hijriah",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-03-24",
+      "name": "Idul Fitri 1447 Hijriah",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-04-03",
+      "name": "Wafat Yesus Kristus",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-04-05",
+      "name": "Kebangkitan Yesus Kristus (Paskah)",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-05-01",
+      "name": "Hari Buruh Internasional",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-05-14",
+      "name": "Kenaikan Yesus Kristus",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-05-15",
+      "name": "Kenaikan Yesus Kristus",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-05-27",
+      "name": "Idul Adha 1447 Hijriah",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-05-28",
+      "name": "Idul Adha 1447 Hijriah",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-05-31",
+      "name": "Hari Raya Waisak 2570 BE",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-06-01",
+      "name": "Hari Lahir Pancasila",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-06-16",
+      "name": "1 Muharam Tahun Baru Islam 1448 Hijriah",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-08-17",
+      "name": "Proklamasi Kemerdekaan",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-08-25",
+      "name": "Maulid Nabi Muhammad S.A.W.",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-12-24",
+      "name": "Kelahiran Yesus Kristus",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2026"
+    },
+    {
+      "date": "2026-12-25",
+      "name": "Kelahiran Yesus Kristus",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2026"
+    }
+  ]
+}

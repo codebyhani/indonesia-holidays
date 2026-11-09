@@ -1,0 +1,54 @@
+{
+  "year": 2031,
+  "source": {
+    "id": "fixture-duplicate-2031",
+    "title": "TEST FIXTURE — two types on one date, not an official decree",
+    "kind": "test_fixture",
+    "numbers": [
+      {
+        "ministry": "Test fixture",
+        "number": "Not a decree"
+      }
+    ],
+    "issuedOn": "2031-01-01",
+    "place": "Fixture",
+    "signatories": ["Test fixture"],
+    "urls": [
+      {
+        "label": "Fixture",
+        "url": "https://example.com/indonesia-holidays/fixtures/duplicate-date"
+      }
+    ],
+    "amendments": [
+      {
+        "id": "fixture-duplicate-amendment",
+        "title": "TEST FIXTURE — amendment metadata",
+        "issuedOn": "2031-02-01",
+        "urls": [
+          {
+            "label": "Fixture amendment",
+            "url": "https://example.com/indonesia-holidays/fixtures/duplicate-date/amendment"
+          }
+        ],
+        "summary": "Records that amendment metadata survives validation. It does not change a real holiday."
+      }
+    ],
+    "notes": [
+      "Labeled test fixture. The two rows share a date on purpose."
+    ]
+  },
+  "holidays": [
+    {
+      "date": "2031-01-01",
+      "name": "Fixture collective leave",
+      "type": "collective_leave",
+      "sourceId": "fixture-duplicate-2031"
+    },
+    {
+      "date": "2031-01-01",
+      "name": "Fixture national holiday",
+      "type": "national_holiday",
+      "sourceId": "fixture-duplicate-2031"
+    }
+  ]
+}

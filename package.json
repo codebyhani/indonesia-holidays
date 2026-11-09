@@ -1,0 +1,64 @@
+{
+  "name": "indonesia-holidays",
+  "version": "0.1.0",
+  "description": "Offline Indonesian national public holidays and collective leave (cuti bersama), with working-day calculations.",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "data",
+    "README.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "MAINTAINERS.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run && TZ=Pacific/Pago_Pago vitest run && TZ=Pacific/Kiritimati vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "keywords": [
+    "indonesia",
+    "holidays",
+    "hari-libur",
+    "libur-nasional",
+    "cuti-bersama",
+    "working-days",
+    "calendar",
+    "typescript"
+  ],
+  "author": "Code by Hani",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codebyhani/indonesia-holidays.git"
+  },
+  "homepage": "https://github.com/codebyhani/indonesia-holidays#readme",
+  "bugs": {
+    "url": "https://github.com/codebyhani/indonesia-holidays/issues"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "tsup": "^9.0.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.1.0"
+  }
+}

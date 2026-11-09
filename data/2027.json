@@ -1,0 +1,222 @@
+{
+  "year": 2027,
+  "source": {
+    "id": "skb-3-menteri-2027",
+    "title": "Keputusan Bersama Menteri Agama, Menteri Ketenagakerjaan, dan Menteri Pendayagunaan Aparatur Negara dan Reformasi Birokrasi tentang Hari Libur Nasional dan Cuti Bersama Tahun 2027",
+    "kind": "skb_3_menteri",
+    "numbers": [
+      {
+        "ministry": "Kementerian Agama",
+        "number": "1205 Tahun 2026"
+      },
+      {
+        "ministry": "Kementerian Ketenagakerjaan",
+        "number": "3 Tahun 2026"
+      },
+      {
+        "ministry": "Kementerian Pendayagunaan Aparatur Negara dan Reformasi Birokrasi",
+        "number": "2 Tahun 2026"
+      }
+    ],
+    "issuedOn": "2026-09-15",
+    "place": "Jakarta",
+    "signatories": [
+      "Nasaruddin Umar, Menteri Agama",
+      "Yassierli, Menteri Ketenagakerjaan",
+      "Rini Widyantini, Menteri Pendayagunaan Aparatur Negara dan Reformasi Birokrasi"
+    ],
+    "urls": [
+      {
+        "label": "JDIH Kementerian Ketenagakerjaan PDF, annex text verified",
+        "url": "https://jdih.kemnaker.go.id/asset/data_puu/2026skb003.pdf"
+      },
+      {
+        "label": "JDIH Kemenko Infrastruktur PDF, annex text verified",
+        "url": "https://jdih.kemenkoinfra.go.id/dokumen/file/kepber/2026skb002.pdf"
+      },
+      {
+        "label": "JDIH Kementerian Ketenagakerjaan catalog record",
+        "url": "https://jdih.kemnaker.go.id/peraturan/detail/3089/keputusan-bersama-menteri-agama-menteri-ketenagakerjaan-dan-menteri-pendayagunaan-aparatur-negara-dan-reformasi-birokrasi-nomor-3-tahun-2026"
+      },
+      {
+        "label": "JDIH Kementerian PANRB catalog record",
+        "url": "https://jdih.menpan.go.id/dokumen-hukum/keputusan-bersama-menteri-agama-menteri-ketenagakerjaan-dan-menteri-pendayagunaan-aparatur-negara-2131"
+      },
+      {
+        "label": "Sekretariat Negara announcement",
+        "url": "https://setneg.go.id/baca/index/inilah_skb_3_menteri_libur_nasional_dan_cuti_bersama_2027"
+      },
+      {
+        "label": "Kementerian Ketenagakerjaan announcement",
+        "url": "https://kemnaker.go.id/news/detail/pemerintah-tetapkan-18-hari-libur-nasional-dan-8-hari-cuti-bersama-tahun-2027"
+      }
+    ],
+    "amendments": [],
+    "notes": [
+      "Annex transcribed from two official PDFs that agree: JDIH Kementerian Ketenagakerjaan 2026skb003.pdf and JDIH Kemenko Infrastruktur kepber/2026skb002.pdf. The 5 Januari row is printed with the scan errors lsra or Isra and Hijirah; it is stored as Isra Mikraj Nabi Muhammad S.A.W. 1448 Hijriah. The 26 Desember row is already printed as Hijriah.",
+      "Diktum KEDUA states that 1 Ramadan 1448 Hijriah, Idul Fitri 1448 Hijriah, and Idul Adha 1448 Hijriah are established by Keputusan Menteri Agama. This file stores the Idul Fitri and Idul Adha dates printed in the annex. 1 Ramadan is not a national holiday in this decree.",
+      "Diktum KEEMPAT states that cuti bersama reduces annual leave. Diktum KEENAM states that collective leave at private institutions is arranged by each leader. Diktum KETIGA tells vital public services to roster staff on these dates.",
+      "The Sekretariat Negara announcement of this decree names the signatories as Menteri Agama Nasaruddin Umar, Menteri Ketenagakerjaan Yassierli, and Menteri PANRB Rini Widyantini, signed in Jakarta on 15 September 2026. The JDIH copies are scans; the readable signature marks match Nasaruddin Umar and Rini Widyantini.",
+      "The decree cites Keputusan Presiden Nomor 8 Tahun 2024 tentang Hari-Hari Libur, and Peraturan Presiden Nomor 90 Tahun 2025 which amends Peraturan Presiden Nomor 140 Tahun 2024, among its considerations. Those citations are not holiday-date amendments. The dated annex is the operative list.",
+      "No holiday-date amending decree was found when this dataset was compiled on 2026-11-09. amendments is empty for that reason."
+    ]
+  },
+  "holidays": [
+    {
+      "date": "2027-01-01",
+      "name": "Tahun Baru 2027 Masehi",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-01-05",
+      "name": "Isra Mikraj Nabi Muhammad S.A.W. 1448 Hijriah",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-02-05",
+      "name": "Tahun Baru Imlek 2578 Kongzili",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-02-06",
+      "name": "Tahun Baru Imlek 2578 Kongzili",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-03-08",
+      "name": "Hari Suci Nyepi (Tahun Baru Saka 1949)",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-03-09",
+      "name": "Idul Fitri 1448 Hijriah",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-03-10",
+      "name": "Idul Fitri 1448 Hijriah",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-03-11",
+      "name": "Idul Fitri 1448 Hijriah",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-03-12",
+      "name": "Idul Fitri 1448 Hijriah",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-03-15",
+      "name": "Idul Fitri 1448 Hijriah",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-03-25",
+      "name": "Wafat Yesus Kristus",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-03-26",
+      "name": "Wafat Yesus Kristus",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-03-28",
+      "name": "Kebangkitan Yesus Kristus (Paskah)",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-05-01",
+      "name": "Hari Buruh Internasional",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-05-06",
+      "name": "Kenaikan Yesus Kristus",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-05-17",
+      "name": "Idul Adha 1448 Hijriah",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-05-18",
+      "name": "Idul Adha 1448 Hijriah",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-05-19",
+      "name": "Hari Raya Waisak 2571 BE",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-05-20",
+      "name": "Hari Raya Waisak 2571 BE",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-06-01",
+      "name": "Hari Lahir Pancasila",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-06-06",
+      "name": "1 Muharam Tahun Baru Islam 1449 Hijriah",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-08-15",
+      "name": "Maulid Nabi Muhammad S.A.W.",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-08-17",
+      "name": "Proklamasi Kemerdekaan",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-12-24",
+      "name": "Kelahiran Yesus Kristus",
+      "type": "collective_leave",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-12-25",
+      "name": "Kelahiran Yesus Kristus",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    },
+    {
+      "date": "2027-12-26",
+      "name": "Isra Mikraj Nabi Muhammad S.A.W. 1449 Hijriah",
+      "type": "national_holiday",
+      "sourceId": "skb-3-menteri-2027"
+    }
+  ]
+}

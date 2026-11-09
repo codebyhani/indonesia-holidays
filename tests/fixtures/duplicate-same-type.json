@@ -1,0 +1,41 @@
+{
+  "year": 2032,
+  "source": {
+    "id": "fixture-duplicate-type-2032",
+    "title": "TEST FIXTURE — duplicate type, not an official decree",
+    "kind": "test_fixture",
+    "numbers": [
+      {
+        "ministry": "Test fixture",
+        "number": "Not a decree"
+      }
+    ],
+    "issuedOn": "2032-01-01",
+    "place": "Fixture",
+    "signatories": ["Test fixture"],
+    "urls": [
+      {
+        "label": "Fixture",
+        "url": "https://example.com/indonesia-holidays/fixtures/duplicate-same-type"
+      }
+    ],
+    "amendments": [],
+    "notes": [
+      "Labeled test fixture. The loader must reject two national holidays on one date."
+    ]
+  },
+  "holidays": [
+    {
+      "date": "2032-04-01",
+      "name": "Fixture one",
+      "type": "national_holiday",
+      "sourceId": "fixture-duplicate-type-2032"
+    },
+    {
+      "date": "2032-04-01",
+      "name": "Fixture two",
+      "type": "national_holiday",
+      "sourceId": "fixture-duplicate-type-2032"
+    }
+  ]
+}

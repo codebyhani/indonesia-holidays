@@ -1,0 +1,41 @@
+{
+  "year": 2024,
+  "source": {
+    "id": "fixture-leap-2024",
+    "title": "TEST FIXTURE — leap day, not an official decree",
+    "kind": "test_fixture",
+    "numbers": [
+      {
+        "ministry": "Test fixture",
+        "number": "Not a decree"
+      }
+    ],
+    "issuedOn": "2024-01-01",
+    "place": "Fixture",
+    "signatories": ["Test fixture"],
+    "urls": [
+      {
+        "label": "Fixture",
+        "url": "https://example.com/indonesia-holidays/fixtures/leap-2024"
+      }
+    ],
+    "amendments": [],
+    "notes": [
+      "Labeled test fixture. These dates are not Indonesian public holidays."
+    ]
+  },
+  "holidays": [
+    {
+      "date": "2024-02-29",
+      "name": "Fixture leap day",
+      "type": "national_holiday",
+      "sourceId": "fixture-leap-2024"
+    },
+    {
+      "date": "2024-03-01",
+      "name": "Fixture collective leave",
+      "type": "collective_leave",
+      "sourceId": "fixture-leap-2024"
+    }
+  ]
+}
