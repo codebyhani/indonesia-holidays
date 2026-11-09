@@ -8,9 +8,10 @@ Code by Hani maintains this package. The public API is stable for 0.1.x: adding 
 2. Run `npm run lint`, `npm run typecheck`, `npm test`, and `npm run build`.
 3. Run `npm pack --dry-run`. The tarball should contain `dist/`, `data/2026.json`, `data/2027.json`, `README.md`, `LICENSE`, `CONTRIBUTING.md`, and `MAINTAINERS.md`. It should not contain `tests/` or `src/`.
 4. Check the export map. `types` points at `dist/index.d.ts`, `import` at `dist/index.js`, and `require` at `dist/index.cjs`.
-5. Publish only after an explicit maintainer decision. `npm publish` is not part of normal development. `prepublishOnly` runs the checks above if someone publishes later.
+5. Bump `package.json` `version` only when you intend to publish. Push that change to `main`. The `Publish` workflow publishes with npm trusted publishing when the version is not already on the registry.
+6. After npm has the new version, create the matching GitHub release notes for that tag.
 
-The package name `indonesia-holidays` was unused on the npm registry when this project was created. Confirm that again before the first publish.
+Do not commit long-lived npm tokens. Trusted publishing is configured on the package settings page for `indonesia-holidays`. A new trusted-publisher connection must complete its first successful publish within two days or it expires.
 
 ## When a decree changes
 
