@@ -1,0 +1,73 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "indonesia-holidays"
+version = "0.1.0"
+description = "Offline Indonesian national public holidays and collective leave (cuti bersama), with working-day calculations."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Code by Hani" }]
+keywords = [
+  "indonesia",
+  "holidays",
+  "hari-libur",
+  "libur-nasional",
+  "cuti-bersama",
+  "working-days",
+  "calendar",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/codebyhani/indonesia-holidays#readme"
+Repository = "https://github.com/codebyhani/indonesia-holidays"
+Issues = "https://github.com/codebyhani/indonesia-holidays/issues"
+
+[project.optional-dependencies]
+dev = [
+  "mypy>=1.13",
+  "pytest>=8.3",
+  "ruff>=0.8",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/indonesia_holidays"]
+
+[tool.hatch.build.hooks.custom]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["indonesia_holidays", "tests"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+mypy_path = "src"
+files = ["src", "tests"]
+explicit_package_bases = true
+warn_unused_ignores = true
