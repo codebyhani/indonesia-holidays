@@ -1,7 +1,8 @@
 name: Publish to PyPI
 
 on:
-  workflow_dispatch:
+  release:
+    types: [published]
 
 permissions:
   contents: read
@@ -9,6 +10,8 @@ permissions:
 
 jobs:
   publish:
+    # Independent versioning: Python tags are python-v0.1.0; npm uses v0.1.1
+    if: startsWith(github.ref_name, 'python-v')
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -25,6 +28,10 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -e ".[dev]"
           python -m pip install build
+      - name: Verify version
+        run: |
+          VERSION=$(python -c "import tomllib; print(tomllib.load(open('pyproject.toml', 'rb'))['project']['version'])")
+          test "${GITHUB_REF_NAME}" = "python-v${VERSION}"
       - name: Verify package
         run: |
           ruff check src tests hatch_build.py scripts
